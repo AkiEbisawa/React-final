@@ -50,7 +50,7 @@ function App() {
           <div key={post.id} className="post">
             <h1 className="postName">{post.name}</h1>
             <h1 className="postContent">{post.content}</h1>
-            <button onClick={() => dispatch(deletePost({ id: post.id }))}>
+            <button className="delete" onClick={() => dispatch(deletePost({ id: post.id }))}>
               Delete
             </button>
           </div>
